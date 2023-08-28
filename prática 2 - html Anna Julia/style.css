@@ -7,9 +7,23 @@
 
 body {
         height: 100vh;
-        box-sizing: border-box;
-        background-color: black;
-        color: white;
+
+        background: linear-gradient(to bottom, #082742, #fff, #000);
+
+    /* Define o tamanho de fundo para cobrir toda a área disponível */
+    background-size: cover;
+
+    /* Impede a repetição do plano de fundo ao longo dos eixos */
+    background-repeat: no-repeat;
+
+    /* Fixa o plano de fundo para que ele não role com o conteúdo da página */
+    background-attachment: fixed;
+
+    /* Remove margens para o corpo */
+    margin: 0;
+
+    /* Define a cor do texto dentro do corpo como branco */
+    color: white;
 }
 
 .titulo-destaque {
@@ -17,46 +31,189 @@ body {
 }
 
 .conteudo {
+        height: auto;
+
+        /* Define a direção dos elementos filhos como coluna (de cima para baixo) */
+        flex-direction: column;
+    
+        /* Define uma margem ao redor do elemento de 10% */
         margin: 10%;
+    
+        /* Transforma o elemento em um contêiner flexível */
         display: flex;
+    
+        /* Alinha os itens verticalmente no centro do contêiner */
         align-items: center;
+    
+        /* Distribui o espaço restante entre os itens horizontalmente */
         justify-content: space-between;
+    
 }
 
 .apresentacao-conteudo {
         width: 615px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        /* Centraliza o alinhamento do texto dentro do contêiner */
+        text-align: center;
+    
+        /* Define a altura do elemento como automática (ajustada ao conteúdo) */
+        height: auto;
         gap: 40px;
+        order: 2;
 }
 
 .apresentacao-conteudo-titulo {
         font-size: 36px;
         font-family: 'Krona One', 'sans-serif';
+        text-align: justify;
 }
 
 .apresentacao-conteudo-paragrafo {
-        font-size: 36px;
+        font-size: 24px;
         font-family: 'Montserrat', sans-serif;
+        text-align: justify;
 }
 
 .apresentacao-links {
-        display:flex;
-        justify-content: space-between;
-}
-.botao {
-        background-color: deeppink;
-        color: black;
-        width: 250px;
-        text-align: center;
-        border-radius: 16px;
-        font-size: 24px;
-        padding: 21.5px 0;
-        text-decoration: none;
-        font-family:'Montserrat', sans-serif;
+        width: 500px;
+
+        /* Transforma o elemento em um contêiner flexível com direção de coluna */
+        display: flex;
+        flex-direction: column;
+    
+        /* Centraliza horizontalmente os elementos dentro do contêiner */
+        align-items: center;
+    
+        /* Define o espaçamento entre os elementos filhos como 20px */
+        gap: 20px;
 }
 
+.botao1 {
+        background-color: #000;
+        align-items: center;
+        color: #b61ca9; /* Cor padrão do Instagram */
+        width: 500px;   
+        height: 80px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid#b61ca9;
+        border-radius: 50px;
+        font-size: 24px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Rock Salt', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .botao1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient (45deg, transparent, #d38b06);
+        transition: 0.5s;
+    }
+    
+    .botao1:hover::before {
+        left: 100%;
+    }
+    
+    .botao1 i {
+        position: absolute;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.botao2 {
+        background-color: #000;
+        align-items: center;
+        color: #333; /* Cor padrão do GitHub */
+        width: 500px;   
+        height: 80px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #333;
+        border-radius: 50px;
+        font-size: 24px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Rock Salt', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .botao2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #333);
+        transition: 0.5s;
+    }
+    
+    .botao2:hover::before {
+        left: 100%;
+    }
+    
+    .botao2 i {
+        position: absolute;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
 .imagem {
-        max-width: 50%;
-        width: auto;
-}
+                /* Define a largura máxima do elemento como 100% */
+                max-width: 100%;
+            
+                /* Define a largura do elemento como 650px */
+                width: 650px;
+            
+                /* Define a altura do elemento como 650px */
+                height: 650px;
+            
+                /* Alinha o conteúdo ao centro horizontalmente */
+                text-align: center;
+            
+                /* Alinha os itens verticalmente ao centro */
+                align-items: center;
+            
+                /* Adiciona curvatura nos cantos do elemento */
+                border-radius: 10px;
+            
+                /* Adiciona uma sombra suave ao elemento */
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+            
+                /* Adiciona uma transição suave à escala do elemento */
+                transition: transform 0.3s ease-in-out;
+            
+                /* Define a posição como relativa para uso de posicionamento absoluto */
+                position: relative;
+            
+                /* Define o overflow como escondido para recortar conteúdo extra */
+                overflow: hidden;
+            
+                /* Define a ordem do elemento como 1 na ordem de exibição */
+                order: 1;
+            
+                /* Adiciona margem inferior de 80px */
+                margin-bottom: 80px;
+            }
