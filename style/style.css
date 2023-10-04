@@ -40,9 +40,9 @@ body {
 
 .cabecalho-menu-links {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 600;
-    color: #b61ca9;
+    color: deeppink;
     text-decoration: none;
 }
 
@@ -67,6 +67,8 @@ body {
     
         /* Distribui o espaço restante entre os itens horizontalmente */
         justify-content: space-between;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
     
 }
 
@@ -295,7 +297,7 @@ body {
 
         .rodape {
             color: white;
-            background-color: mediumblue;
+            background-color: rgb(83, 202, 238);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -307,5 +309,5 @@ body {
         }
 
         .rodape a:hover {
-            color: palevioletred;  
+            color: deeppink;  
         }
