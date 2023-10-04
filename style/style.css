@@ -6,53 +6,57 @@
 }
 
 body {
+        /* Define a altura do corpo como 100% da altura visível da janela (viewport) */
         height: 100vh;
-
-        background: linear-gradient(to bottom, #72c8f1, #b1e8d0, #fdfd96);
-
-    /* Define o tamanho de fundo para cobrir toda a área disponível */
-    background-size: cover;
-
-    /* Impede a repetição do plano de fundo ao longo dos eixos */
-    background-repeat: no-repeat;
-
-    /* Fixa o plano de fundo para que ele não role com o conteúdo da página */
-    background-attachment: fixed;
-
-    /* Remove margens para o corpo */
-    margin: 0;
-
-    /* Define a cor do texto dentro do corpo como branco */
-    color: black;
-}
-
-.cabecalho {
-    padding: 5% 5%;
-    text-align: center;
-}
-
-.cabecalho-menu {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
     
-}
+        /* Cria um gradiente de cores de cima para baixo como plano de fundo */
+        background: linear-gradient(to bottom, #000, #2a0887, #e606ae);
+    
+        /* Define o tamanho de fundo para cobrir toda a área disponível */
+        background-size: cover;
+    
+        /* Impede a repetição do plano de fundo ao longo dos eixos */
+        background-repeat: no-repeat;
+    
+        /* Fixa o plano de fundo para que ele não role com o conteúdo da página */
+        background-attachment: fixed;
+    
+        /* Remove margens para o corpo */
+        margin: 0;
+    
+        /* Define a cor do texto dentro do corpo como branco */
+        color: white;
+    }
 
-.cabecalho-menu-links {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    color: deeppink;
-    text-decoration: none;
-}
+    .cabecalho {
+        text-align: center; /* Centraliza o conteúdo do cabeçalho */
+        padding: 5% 5%; 
+    }
+    
+    .cabecalho-menu {
+        display: flex;
+        justify-content: center; /* Centraliza os elementos dentro do cabeçalho */
+        gap: 80px;
+    }
+    
+    .cabecalho-menu-links {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px; /* Tamanho da fonte aumentado */
+        font-weight: 800;
+        color: #e606ae;
+        text-decoration: none;
+    }
+    
+    
 
 .titulo-destaque {
-        color: deeppink;
+            color: #22d4fd;
 }
 
 .conteudo {
+        /* Define a altura do elemento como automática (ajustada ao conteúdo) */
         height: auto;
-
+    
         /* Define a direção dos elementos filhos como coluna (de cima para baixo) */
         flex-direction: column;
     
@@ -67,30 +71,49 @@ body {
     
         /* Distribui o espaço restante entre os itens horizontalmente */
         justify-content: space-between;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 20px;
-    
-}
+    }
 
 .apresentacao-conteudo {
+        /* Define a largura do elemento como 615px */
         width: 615px;
+    
+        /* Transforma o elemento em um contêiner flexível com direção de coluna */
         display: flex;
         flex-direction: column;
+    
+        /* Centraliza verticalmente os elementos dentro do contêiner */
         justify-content: center;
+    
+        /* Centraliza horizontalmente os elementos dentro do contêiner */
         align-items: center;
-
+    
         /* Centraliza o alinhamento do texto dentro do contêiner */
         text-align: center;
     
         /* Define a altura do elemento como automática (ajustada ao conteúdo) */
         height: auto;
+    
+        /* Define o espaçamento entre os elementos filhos como 40px */
         gap: 40px;
+    
+        /* Define a ordem do elemento como 2 na ordem de exibição */
         order: 2;
-}     
+    }
+
+.apresentacao-conteudo-titulo {
+        font-size: 36px;
+        font-family: 'Krona One', 'sans-serif';
+}
+
+.apresentacao-conteudo-paragrafo {
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+}
 
 .apresentacao-links {
+        /* Define a largura do elemento como 500px */
         width: 500px;
-
+    
         /* Transforma o elemento em um contêiner flexível com direção de coluna */
         display: flex;
         flex-direction: column;
@@ -100,7 +123,14 @@ body {
     
         /* Define o espaçamento entre os elementos filhos como 20px */
         gap: 20px;
-}
+    }
+    
+  .apresentacao-links-conteudo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+        }
+    
 
 .botao1 {
         background-color: #000;
@@ -130,7 +160,7 @@ body {
         left: -100%;
         width: 100%;
         height: 100%;
-        background: linear-gradient (45deg, transparent, #d38b06);
+        background: linear-gradient(45deg, transparent, #2a0887);
         transition: 0.5s;
     }
     
@@ -149,13 +179,13 @@ body {
 .botao2 {
         background-color: #000;
         align-items: center;
-        color: #333; /* Cor padrão do GitHub */
+        color: #fff; /* Cor padrão do GitHub */
         width: 500px;   
         height: 80px; 
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid #333;
+        border: 2px solid #fff;
         border-radius: 50px;
         font-size: 24px;
         padding: 15px 0;
@@ -166,6 +196,7 @@ body {
         position: relative;
         overflow: hidden;
     }
+
     
     .botao2::before {
         content: "";
@@ -190,8 +221,50 @@ body {
         transform: translate(-50%, -50%);
     }
 
-    .imagem {
-        max-width: 40%;
+    .botao3 {
+        background-color: #000;
+        color: #0077B5; /* Cor padrão do LinkedIn */
+        width: 500px;
+        height: 80px;
+        align-items: center;
+        text-align: center;
+        border: 2px solid #0077B5;
+        border-radius: 50px;
+        font-size: 36px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Rock Salt', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .botao3::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #0077B5);
+        transition: 0.5s;
+    }
+    
+    .botao3:hover::before {
+        left: 100%;
+    }
+    
+    .botao3 i {
+        position: absolute;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.imagem {
+        max-width: 35%;
         width: auto;
         border-radius: 5%;
         margin-right: 25px;
@@ -297,7 +370,7 @@ body {
 
         .rodape {
             color: white;
-            background-color: rgb(83, 202, 238);
+            background-color: #040307;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -309,5 +382,6 @@ body {
         }
 
         .rodape a:hover {
-            color: deeppink;  
+            color: magenta;  
+            text-decoration: none;
         }

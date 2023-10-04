@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+        /* Define a altura do corpo como 100% da altura visível da janela (viewport) */
+        height: 100vh;
+    
+        /* Cria um gradiente de cores de cima para baixo como plano de fundo */
+        background: linear-gradient(to bottom, #000, #2a0887, #e606ae);
+    
+        /* Define o tamanho de fundo para cobrir toda a área disponível */
+        background-size: cover;
+    
+        /* Impede a repetição do plano de fundo ao longo dos eixos */
+        background-repeat: no-repeat;
+    
+        /* Fixa o plano de fundo para que ele não role com o conteúdo da página */
+        background-attachment: fixed;
+    
+        /* Remove margens para o corpo */
+        margin: 0;
+    
+        /* Define a cor do texto dentro do corpo como branco */
+        color: white;
+    }
+    
+    .cabecalho {
+        text-align: center; /* Centraliza o conteúdo do cabeçalho */
+        padding: 5% 5%; 
+    }
+    
+    .cabecalho-menu {
+        display: flex;
+        justify-content: center; /* Centraliza os elementos dentro do cabeçalho */
+        gap: 80px;
+    }
+    
+    .cabecalho-menu-links {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 36px; /* Tamanho da fonte aumentado */
+        font-weight: 800;
+        color: #e606ae;
+        text-decoration: none;
+    }
+
+.conteudo {
+        /* Define a altura do elemento como automática (ajustada ao conteúdo) */
+        height: auto;
+    
+        /* Define a direção dos elementos filhos como coluna (de cima para baixo) */
+        flex-direction: column;
+    
+        /* Define uma margem ao redor do elemento de 10% */
+        margin: 10%;
+    
+        /* Transforma o elemento em um contêiner flexível */
+        display: flex;
+    
+        /* Alinha os itens verticalmente no centro do contêiner */
+        align-items: center;
+    
+        /* Distribui o espaço restante entre os itens horizontalmente */
+        justify-content: space-between;
+    }
+
+.apresentacao-conteudo {
+        /* Define a largura do elemento como 615px */
+        width: 615px;
+    
+        /* Transforma o elemento em um contêiner flexível com direção de coluna */
+        display: flex;
+        flex-direction: column;
+    
+        /* Centraliza verticalmente os elementos dentro do contêiner */
+        justify-content: center;
+    
+        /* Centraliza horizontalmente os elementos dentro do contêiner */
+        align-items: center;
+    
+        /* Centraliza o alinhamento do texto dentro do contêiner */
+        text-align: center;
+    
+        /* Define a altura do elemento como automática (ajustada ao conteúdo) */
+        height: auto;
+    
+        /* Define o espaçamento entre os elementos filhos como 40px */
+        gap: 40px;
+    
+        /* Define a ordem do elemento como 2 na ordem de exibição */
+        order: 2;
+    }
+
+.apresentacao-conteudo-titulo {
+        font-size: 36px;
+        font-family: 'Krona One', 'sans-serif';
+}
+
+.apresentacao-conteudo-paragrafo {
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao-conteudo-texto {
+    width: 615px;
+    
+    /* Transforma o elemento em um contêiner flexível com direção de coluna */
+    display: flex;
+    flex-direction: column;
+
+    /* Centraliza verticalmente os elementos dentro do contêiner */
+    justify-content: center;
+
+    /* Centraliza horizontalmente os elementos dentro do contêiner */
+    align-items: center;
+
+    /* Centraliza o alinhamento do texto dentro do contêiner */
+    text-align: center;
+
+    /* Define a altura do elemento como automática (ajustada ao conteúdo) */
+    height: auto;
+
+    /* Define o espaçamento entre os elementos filhos como 40px */
+    gap: 40px;
+
+
+}
+
+.apresentacao-links {
+        /* Define a largura do elemento como 500px */
+        width: 500px;
+    
+        /* Transforma o elemento em um contêiner flexível com direção de coluna */
+        display: flex;
+        flex-direction: column;
+    
+        /* Centraliza horizontalmente os elementos dentro do contêiner */
+        align-items: center;
+    
+        /* Define o espaçamento entre os elementos filhos como 20px */
+        gap: 20px;
+    }
+    
+  .apresentacao-links-conteudo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+        }
+
+        .rodape {
+            color: white;
+            background-color: #040307;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Krone One', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 10px;
+        }
+
+        .rodape a:hover {
+            color: magenta;  
+            text-decoration: none;
+        }
