@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+        height: 100vh;
+
+        background: linear-gradient(to bottom, #72c8f1, #b1e8d0, #fdfd96);
+
+    /* Define o tamanho de fundo para cobrir toda a área disponível */
+    background-size: cover;
+
+    /* Impede a repetição do plano de fundo ao longo dos eixos */
+    background-repeat: no-repeat;
+
+    /* Fixa o plano de fundo para que ele não role com o conteúdo da página */
+    background-attachment: fixed;
+
+    /* Remove margens para o corpo */
+    margin: 0;
+
+    /* Define a cor do texto dentro do corpo como branco */
+    color: black;
+}
+
+.cabecalho {
+    padding: 5% 5%;
+    text-align: center;
+}
+
+.cabecalho-menu {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    
+}
+
+.cabecalho-menu-links {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: deeppink;
+    text-decoration: none;
+}
+
+.titulo-destaque {
+        color: deeppink;
+}
+
+.conteudo {
+        height: auto;
+
+        /* Define a direção dos elementos filhos como coluna (de cima para baixo) */
+        flex-direction: column;
+    
+        /* Define uma margem ao redor do elemento de 10% */
+        margin: 10%;
+    
+        /* Transforma o elemento em um contêiner flexível */
+        display: flex;
+    
+        /* Alinha os itens verticalmente no centro do contêiner */
+        align-items: center;
+    
+        /* Distribui o espaço restante entre os itens horizontalmente */
+        justify-content: space-between;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+    
+}
+
+.apresentacao-conteudo {
+        width: 615px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        /* Centraliza o alinhamento do texto dentro do contêiner */
+        text-align: center;
+    
+        /* Define a altura do elemento como automática (ajustada ao conteúdo) */
+        height: auto;
+        gap: 40px;
+        order: 2;
+}     
+
+.apresentacao-links {
+        width: 500px;
+
+        /* Transforma o elemento em um contêiner flexível com direção de coluna */
+        display: flex;
+        flex-direction: column;
+    
+        /* Centraliza horizontalmente os elementos dentro do contêiner */
+        align-items: center;
+    
+        /* Define o espaçamento entre os elementos filhos como 20px */
+        gap: 20px;
+}
+
+.botao1 {
+        background-color: #000;
+        align-items: center;
+        color: #b61ca9; /* Cor padrão do Instagram */
+        width: 500px;   
+        height: 80px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid#b61ca9;
+        border-radius: 50px;
+        font-size: 24px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Rock Salt', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .botao1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient (45deg, transparent, #d38b06);
+        transition: 0.5s;
+    }
+    
+    .botao1:hover::before {
+        left: 100%;
+    }
+    
+    .botao1 i {
+        position: absolute;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.botao2 {
+        background-color: #000;
+        align-items: center;
+        color: #333; /* Cor padrão do GitHub */
+        width: 500px;   
+        height: 80px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #333;
+        border-radius: 50px;
+        font-size: 24px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Rock Salt', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .botao2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #333);
+        transition: 0.5s;
+    }
+    
+    .botao2:hover::before {
+        left: 100%;
+    }
+    
+    .botao2 i {
+        position: absolute;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .imagem {
+        max-width: 40%;
+        width: auto;
+        border-radius: 5%;
+        margin-right: 25px;
+        
+            /* Define a largura do elemento como 650px */
+            width: auto;
+        
+            /* Define a altura do elemento como 650px */
+            height: auto;
+        
+            /* Alinha o conteúdo ao centro horizontalmente */
+            text-align: center;
+        
+            /* Alinha os itens verticalmente ao centro */
+            align-items: center;
+        
+            /* Adiciona curvatura nos cantos do elemento */
+            border-radius: 10px;
+        
+            /* Adiciona uma sombra suave ao elemento */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+        
+            /* Adiciona uma transição suave à escala do elemento */
+            transition: transform 0.3s ease-in-out;
+        
+            /* Define a posição como relativa para uso de posicionamento absoluto */
+            position: relative;
+        
+            /* Define o overflow como escondido para recortar conteúdo extra */
+            overflow: hidden;
+        
+            /* Define a ordem do elemento como 1 na ordem de exibição */
+            order: 1;
+        
+            /* Adiciona margem inferior de 80px */
+            margin-bottom: 80px;
+        }
+        
+        /* Elemento <img> dentro de elementos com a classe .imagem */
+        .imagem img {
+            /* Faz a imagem se ajustar mantendo a proporção */
+            object-fit: cover;
+        
+            /* Torna a imagem um elemento de bloco */
+            display: block;
+        
+            /* Define a largura e a altura como 100% para preencher o elemento pai */
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* Pseudo-elementos ::before e ::after para elementos com a classe .imagem */
+        .imagem::before,
+        .imagem::after {
+            /* Adiciona um conteúdo vazio aos pseudo-elementos */
+            content: "";
+        
+            /* Define a posição como absoluta para posicionamento personalizado */
+            position: absolute;
+        
+            /* Define a largura e a altura dos pseudo-elementos como 10px */
+            width: 10px;
+            height: 10px;
+        
+            /* Adiciona uma borda de 2px sólida laranja aos pseudo-elementos */
+            border: 2px color #f17bb0;
+        
+            /* Define o fundo dos pseudo-elementos como transparente */
+            background-color: transparent;
+        }
+        
+        /* Pseudo-elemento ::before ao canto superior esquerdo do elemento com a classe .imagem */
+        .imagem::before {
+            /* Posiciona o pseudo-elemento no canto superior esquerdo */
+            top: 0;
+            left: 0;
+        
+            /* Adiciona curvatura de borda no canto superior esquerdo */
+            border-top-left-radius: 10px;
+        
+            /* Define as larguras das bordas do pseudo-elemento */
+            border-width: 2px 0 0 2px;
+        }
+        
+        /* Pseudo-elemento ::after ao canto inferior direito do elemento com a classe .imagem */
+        .imagem::after {
+            /* Posiciona o pseudo-elemento no canto inferior direito */
+            bottom: 0;
+            right: 0;
+        
+            /* Adiciona curvatura de borda no canto inferior direito */
+            border-bottom-right-radius: 10px;
+        
+            /* Define as larguras das bordas do pseudo-elemento */
+            border-width: 0 2px 2px 0;
+        }
+        
+        /* Efeito ao passar o mouse sobre elementos com a classe .imagem */
+        .imagem:hover {
+            /* Aumenta a escala do elemento em 10% */
+            transform: scale(1.1);
+        }
+
+        .rodape {
+            color: white;
+            background-color: rgb(83, 202, 238);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Krone One', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 10px;
+        }
+
+        .rodape a:hover {
+            color: deeppink;  
+        }
